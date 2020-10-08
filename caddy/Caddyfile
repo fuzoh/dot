@@ -1,0 +1,15 @@
+localhost {
+
+  root * /Users/bastien/Lab/symfony_test/public
+  file_server
+  php_fastcgi 127.0.0.1:9000
+
+}
+
+monsite.local {
+
+  root * /Users/bastien/Sites/laravel-8/public
+  file_server
+  php_fastcgi 127.0.0.1:9000
+
+}
