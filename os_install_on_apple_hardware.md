@@ -10,7 +10,7 @@ It's not a problem to install a linux os with the default mac EFI, but it can be
 
 ## Use rEFInd to start integrated graphics on macbook
 
-The problem is : When yous start a system diffrent than macOS, the integrated GPU stays offline becaus it is deactivated by the EFI wich disable functionalities depending on the os started.
+The problem is: When yous start a system diffrent than macOS, the integrated GPU stays offline becaus it is deactivated by the EFI wich disable functionalities depending on the os started.
 
 rEFInd provides a simple option to trick the EFI. So the EFI will think that macOS start, but there's an other system starting, thus the integrated GPU will start.
 
@@ -19,6 +19,6 @@ rEFInd provides a simple option to trick the EFI. So the EFI will think that mac
 
 > To find the refind.conf file you need to mound your EFI partition on you active system. For example `mount /dev/sda1 /boot/efi`.
 
-Additional resources :
+Additional resources:
 - [0xbb/gpu-switch](https://github.com/0xbb/gpu-switch)
 - [rEFInd config](http://www.rodsbooks.com/refind/configfile.html)
