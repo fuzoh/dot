@@ -12,11 +12,11 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 ```
 # Add an origin for a repo :
-$ git remote add origin git@codeberg.org:bastiennicoud/dot
+$ git remote add origin git@codeberg.org:bastiennicoud/dot.git
 
 # Add more origins url's (need to re-assign the previously created origin url)
-$ git remote set-url --add --push origin git@codeberg.org:bastiennicoud/dot
-$ git remote set-url --add --push origin git@github.com:bastiennicoud/dot
+$ git remote set-url --add --push origin git@codeberg.org:bastiennicoud/dot.git
+$ git remote set-url --add --push origin git@github.com:bastiennicoud/dot.git
 
 # List all the added url's
 $ git remote -v
