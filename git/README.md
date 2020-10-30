@@ -1,5 +1,13 @@
 # Git
 
+## Generate ssh keys
+```
+# Generate a new ssh key
+$ ssh-keygen -t rsa -b 4096 -C "email@test.com"
+
+# Copy the public key in clipboard (only on macos)
+$ pbcopy < ~/.ssh/id_rsa.pub
+```
 ## Push to multiple origins at once
 
 ```
