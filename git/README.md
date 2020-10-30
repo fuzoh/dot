@@ -29,3 +29,8 @@ $ git remote -v
 3. Tell git to use the gpg key (in config, user.signingkey)
 4. Add the public key to the github account
 5. Lets go
+
+```
+# Copy a publig gpg key in the clipboard (macos only)
+$ gpg --armor --export KEY_ID | pbcopy
+```
