@@ -1,1 +1,1 @@
-# Personal dotfiles
+# My Dotfiles
