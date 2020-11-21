@@ -1,9 +1,10 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "workbench.colorTheme": "One Dark Pro Italic Vivid",
-    "editor.fontFamily": "Cartograph CF",
+    "editor.fontFamily": "Iosevka Extended",
+    "editor.fontWeight": 400,
     "editor.fontSize": 16,
-    "editor.lineHeight": 26,
+    "editor.lineHeight": 24,
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
     "editor.tabSize": 2,
@@ -17,4 +18,9 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.zoomLevel": 0,
+    "terminal.integrated.fontSize": 14,
+    "oracledevtools.bookmarkFileFolder": "/Users/bastien/Oracle/oracle.oracledevtools",
+    "oracledevtools.connectionConfiguration.configFilesFolder": "/Users/bastien/Oracle/network/admin",
+    "oracledevtools.connectionConfiguration.walletFileFolder": "/Users/bastien/Oracle/network/admin",
+    "git.enableCommitSigning": true
 }
