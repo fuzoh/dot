@@ -11,3 +11,11 @@ To activat the capability to move focus with keyboard everywere, just activate t
 
 Tell the system to call the touchId module when trying a privilege elevation with sudo.
 Just add in the `/etc/pam.d/sudo` file the line `auth sufficient pam_tid.so` below the first line. This just tells that the touchId authentication is sufficient to authorize a sudo privilege elevation.
+
+## Generate an `.icns` file from an `.iconset` folder
+
+`.icns` are the format for macOS icons.
+
+```
+$ iconutil -c icns <iconset filename>
+```
