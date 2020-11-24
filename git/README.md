@@ -46,6 +46,12 @@ $ gpg --full-generate-key
 # List existing GPG key's
 $ gpg --list-secret-keys --keyid-format LONG
 
+# Add the key id to the git config
+$ git config --global user.signingkey <key id>
+
+# Sign all commits by default
+$ git config --global commit.gpgsign true
+
 # Copy a public gpg key in the clipboard (macos only)
 $ gpg --armor --export KEY_ID | pbcopy
 ```
