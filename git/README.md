@@ -65,4 +65,7 @@ $ git config --global commit.gpgsign true
 
 # Copy a public gpg key in the clipboard (macos only)
 $ gpg --armor --export KEY_ID | pbcopy
+
+# Set GPG_TTY var on linux
+export GPG_TTY=$(tty)
 ```
