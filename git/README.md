@@ -2,20 +2,31 @@
 
 ## Generate ssh keys
 ```
-# Generate a new ssh key
+# Generate a new ssh key (with modern ed25519 algorithm)
+$ ssh-keygen -t ed25519 -C "email@test.com"
+# Or on legacy system
 $ ssh-keygen -t rsa -b 4096 -C "email@test.com"
 
 # Copy the public key in clipboard (only on macos)
-$ pbcopy < ~/.ssh/id_rsa.pub
+$ pbcopy < ~/.ssh/id_ed25519.pub
+# Or copy the key by opening it on your favourite editor or with cat
 
 # Start ssh-agent
 $ eval "$(ssh-agent -s)"
 
 # Add key to the agent
-$ ssh-add -K ~/.ssh/id_rsa
+$ ssh-add -K ~/.ssh/ed25519
 ```
 
 > On mac add the key to your `~/.ssh/config`, to automaticaly load keys into the agent.
+> `$ open ~/.ssh/config`
+> Add on `config` file :
+> ```
+> Host *
+>   AddKeysToAgent yes
+>   UseKeychain yes
+>   IdentityFile ~/.ssh/id_ed25519
+> ```
 
 ## Push to multiple origins at once
 
