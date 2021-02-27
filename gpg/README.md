@@ -14,3 +14,11 @@ This includes asymmetric key generation and management. Asymmetric keys are well
 * [GPG basic commands](basic_commands.md)
 * [Keys storage strategy](storage_strategy.md)
 * [Managing GPG keys](managing_keys.md)
+
+### Some external resources
+
+* [Convert key to subkeys](http://www.macfreek.nl/memory/Convert_GPG_keys_to_subkeys)
+* [OpenPGP best practices](https://riseup.net/en/gpg-best-practices)
+* [Crypto introduction](https://blog.sanctum.geek.nz/series/gnu-linux-crypto/)
+* [GPG quick start](https://www.madboa.com/geek/gpg-quickstart/)
+* [GnuPG handbook](https://www.gnupg.org/documentation/guides.html)

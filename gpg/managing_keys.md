@@ -5,17 +5,54 @@ We want to manage the master key on a live OS disconnected from internet. I use 
 $ export GNUPGHOME=/mnt/keys/gnupg
 ```
 
-## Master key generation
+## Key generation
 
 ```
+# Key generation
 $ gpg --full-generate-key
 
-$ gpg --edit-key <KEYID>
+# Generating a revoke certificate
+$ gpg --output <REVOKE_CERT_FILE> --gen-revoke <KEY_ID>
+```
 
-$ addkey
+## Key edition
 
-$ gpg --export <KEYID>.       > publickey.gpg
-$ gpg --export-secret-keys    > secretkey.gpg
-$ gpg --export-secret-subkeys > secretsubkey.gpg
+```
+# Enter in edition mode for a specific key
+$ gpg --edit-key <key-id>
 
+# Some commands to interact with keys in edition mode
+$ help # Display all commands
+$ key # Select a subkey
+$ revkey # Revoke a key
+$ addkey # Create a subkey
+$ expire # Change expiration
+$ adduid # Add new identity to the key
+```
+
+## Export keys
+
+```
+# Export keys in binary format
+$ gpg --export --output <PUBLIC_KEY.asc> <key-id>
+$ gpg --export-secret-keys --output <SECRET_KEY.asc> <key-id>
+$ gpg --export-secret-subkeys --output <SECRET_SUBKEYS.asc>
+
+# Export in ascii armored format
+# Use the --armor (-a) flag
+$ gpg --export --output <FILE.asc> --armor <key-id>
+$ gpg --export-secret-keys --output <FILE.asc> --armor <key-id>
+```
+
+## Import keys
+
+```
+# Check key fingerprint
+$ gpg --with-fingerprint <KEY_FILE>
+
+# Import a public key
+$ gpg --import <A_PUBLIC_KEY_FILE>
+
+# Import backuped secret key
+$ gpg --allow-secret-key-import --import <A_PRIVATE_KEY_FILE>
 ```
