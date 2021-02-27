@@ -1,6 +1,6 @@
 # GPG basic commands
 
-```
+```sh
 # Generating a key
 $ gpg --full-generate-key
 
@@ -13,7 +13,7 @@ $ gpg --import <A_PUBLIC_KEY_FILE>
 
 ## Encryption
 
-```
+```sh
 # Encrypt
 $ gpg --recipient <KEY_ID> --encrypt <FILE_TO_ENCRYPT>
 
@@ -23,7 +23,7 @@ $ gpg --output <OUTPUT_FILE> --decrypt <ENCRYPTED_FILE.gpg>
 
 ## Sign
 
-```
+```sh
 # Sign a file (embeded signature)
 $ gpg --sign <FILE> --output <FILE_SIGNATURE.sig>
 # Text signature (use --clearsign flag)
@@ -39,7 +39,7 @@ $ gpg --verify <DETACHED_SIGNATURE> <FILE>
 
 ## Sign and encrypt
 
-```
+```sh
 # Encrypt and sign
 $ gpg --sign <FILE> --encrypt --recipient <KEY_ID> [--armor]
 

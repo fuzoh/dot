@@ -1,6 +1,6 @@
 # Postgresql
 
-```
+```sh
 # Password update for md5 connexion
 # Connect to psql with cli
 $ sudo -u postgres psql template1

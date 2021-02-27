@@ -6,7 +6,7 @@ WSL dosen't use the default distribution init system. So you cannot use systemd
 to manage processes.
 Instead you can use the service command, below an example with postgresql :
 
-```
+```sh
 # Check the status of a service
 $ sudo service postgresql status
 

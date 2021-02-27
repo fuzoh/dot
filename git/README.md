@@ -1,7 +1,7 @@
 # Git
 
 ## Generate ssh keys
-```
+```sh
 # Generate a new ssh key (with modern ed25519 algorithm)
 $ ssh-keygen -t ed25519 -C "email@test.com"
 # Or on legacy system
@@ -30,7 +30,7 @@ $ ssh-add -K ~/.ssh/ed25519
 
 ## Push to multiple origins at once
 
-```
+```sh
 # Add an origin for a repo :
 $ git remote add origin git@codeberg.org:bastiennicoud/dot.git
 
@@ -44,16 +44,9 @@ $ git remote -v
 
 ## Signing commits
 
-1. Install [gpg suite](https://gpgtools.org). (allows to store passphrase in macOS keychain)
-2. Generate a gpg key on the computer (must use a github verified email)
-3. Tell git to use the gpg key (in config, user.signingkey)
-4. Add the public key to the github account
-5. Lets go
+You need a GnuPG distrubution, and personal gpg keys.
 
-```
-# Generate a GPG key
-$ gpg --full-generate-key
-
+```sh
 # List existing GPG key's
 $ gpg --list-secret-keys --keyid-format LONG
 

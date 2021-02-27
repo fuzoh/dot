@@ -16,6 +16,6 @@ Just add in the `/etc/pam.d/sudo` file the line `auth sufficient pam_tid.so` bel
 
 `.icns` are the format for macOS icons.
 
-```
+```sh
 $ iconutil -c icns <iconset filename>
 ```

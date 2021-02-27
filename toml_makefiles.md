@@ -18,6 +18,6 @@ echo "hello"
 
 ## Execute the makefile tasks
 
-```
+```sh
 $ cargo make your_task
 ```
