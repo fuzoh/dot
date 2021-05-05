@@ -42,6 +42,21 @@ $ git remote set-url --add --push origin git@github.com:bastiennicoud/dot.git
 $ git remote -v
 ```
 
+## Use a specific ssh key
+
+First generate à new key, and add it to the agent.
+
+Then add the key to the `.ssh/config`:
+```
+Host my-other-ssh-key-name
+>   AddKeysToAgent yes
+>   Host git-hosting.dev
+>   UseKeychain yes
+>   IdentityFile ~/.ssh/the_other_ssh_key
+```
+
+Then use the `Host` identifier in your git repository configuration. EX: `git@my-other-ssh-key-name:my-repo-identifier.git`
+
 ## Signing commits
 
 You need a GnuPG distrubution, and personal gpg keys.
