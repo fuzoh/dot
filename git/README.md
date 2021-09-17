@@ -50,7 +50,7 @@ Then add the key to the `.ssh/config`:
 ```
 Host my-other-ssh-key-name
 >   AddKeysToAgent yes
->   Host git-hosting.dev
+>   HostName git-hosting.dev
 >   UseKeychain yes
 >   IdentityFile ~/.ssh/the_other_ssh_key
 ```
